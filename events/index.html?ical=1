@@ -1,0 +1,9 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fixing Social Media - ECPv5.1.2//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fixing Social Media
+X-ORIGINAL-URL:https://fixingsocialmedia.mit.edu
+X-WR-CALDESC:Events for Fixing Social Media
+END:VCALENDAR

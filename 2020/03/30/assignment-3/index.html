@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+
+		<title>Assignment 3:  Case Study &#8211; Fixing Social Media</title>
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Fixing Social Media &raquo; Feed" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Fixing Social Media &raquo; Comments Feed" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="text/calendar" title="Fixing Social Media &raquo; iCal Feed" href="../../../../events/index.html%3Fical=1" />
+<link rel="alternate" type="application/rss+xml" title="Fixing Social Media &raquo; Assignment 3:  Case Study Comments Feed" href="feed/index.html" />
+	<script type="text/javascript">
+		var ajaxurl = 'https://fixingsocialmedia.mit.edu/wp-admin/admin-ajax.php';
+	</script>
+			<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/fixingsocialmedia.mit.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='userlist-style-css'  href='../../../../wp-content/plugins/wp-users-list-widget/css/style.css%3Fver=5.4.1.css' media='all' />
+<link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='../../../../wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css%3Fver=4.12.3.css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css'  href='../../../../wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css%3Fver=4.12.3.css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min.css%3Fver=5.4.1.css' media='all' />
+<link rel='stylesheet' id='wp-blog-designer-fontawesome-stylesheets-css'  href='../../../../wp-content/plugins/blog-designer/css/fontawesome-all.min.css%3Fver=5.4.1.css' media='all' />
+<link rel='stylesheet' id='wp-blog-designer-css-stylesheets-css'  href='../../../../wp-content/plugins/blog-designer/css/designer_css.css%3Fver=5.4.1.css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css'  href='../../../../wp-content/plugins/jquery-collapse-o-matic/light_style.css%3Fver=1.6.css' media='all' />
+<link rel='stylesheet' id='twentytwenty-style-css'  href='../../../../wp-content/themes/twentytwenty/style.css%3Fver=1.3.css' media='all' />
+<style id='twentytwenty-style-inline-css'>
+.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #ee0606; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #ee0606; }button:not(.toggle),.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #ee0606; }.fill-children-accent,.fill-children-accent * { fill: #ee0606; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #ffffff; }:root .has-background-background-color { background-color: #ffffff; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #6d6d6d; }:root .has-secondary-background-color { background-color: #6d6d6d; }pre,fieldset,input,textarea,table,table *,hr { border-color: #dbdbdb; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #dbdbdb; }.wp-block-table.is-style-stripes { border-bottom-color: #dbdbdb; }.wp-block-latest-posts.is-grid li { border-top-color: #dbdbdb; }:root .has-subtle-background-color { color: #dbdbdb; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #f9e6e6; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #f9e6e6; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #1a7191; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #1a7191; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #ffffff; }body:not(.overlay-header) .primary-menu ul { background-color: #ffffff; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #ffffff; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #ffffff; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #f1f6f8; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #1c88af; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #1c88af; }
+</style>
+<link rel='stylesheet' id='twentytwenty-print-style-css'  href='../../../../wp-content/themes/twentytwenty/print.css%3Fver=1.3.css' media='print' />
+<link rel='stylesheet' id='dry_awp_theme_style-css'  href='../../../../wp-content/plugins/advanced-wp-columns/assets/css/awp-columns.css%3Fver=5.4.1.css' media='all' />
+<link rel='stylesheet' id='tmm-css'  href='../../../../wp-content/plugins/team-members/inc/css/tmm_style.css%3Fver=5.4.1.css' media='all' />
+<script src='../../../../wp-includes/js/jquery/jquery.js%3Fver=1.12.4-wp'></script>
+<script src='../../../../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<script src='../../../../wp-content/plugins/blog-designer/js/designer.js%3Fver=5.4.1'></script>
+<script src='../../../../wp-content/themes/twentytwenty/assets/js/index.js%3Fver=1.3' async></script>
+<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How Data Visualization is Discussed Online in a Healthy Community' href='../../../../index.html%3Fp=523.html' />
+<link rel='next' title='A New Bot on the Block: The Rise of Virtual Influencers and What It Means for Our Online Communities' href='../../../../index.html%3Fp=578.html' />
+<meta name="generator" content="WordPress 5.4.1" />
+<link rel="canonical" href="../../../../index.html%3Fp=526.html" />
+<link rel='shortlink' href='../../../../index.html%3Fp=526.html' />
+<link rel="alternate" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embed%3Furl=https:%252F%252Ffixingsocialmedia.mit.edu%252F2020%252F03%252F30%252Fassignment-3%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embed%3Furl=https:%252F%252Ffixingsocialmedia.mit.edu%252F2020%252F03%252F30%252Fassignment-3%252F&amp;format=xml" />
+<style type="text/css" id="tve_global_variables">:root{}</style><script src='https://wordpress.brownbag.me/?dm=92dfdf7b65c23102d23f0f69d602eef7&amp;action=load&amp;blogid=35&amp;siteid=1&amp;t=93504576&amp;back=https%3A%2F%2Ffixingsocialmedia.mit.edu%2F2020%2F03%2F30%2Fassignment-3%2F' type='text/javascript'></script><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://fixingsocialmedia.mit.edu"><link rel="https://theeventscalendar.com/" href="../../../../wp-json/tribe/events/v1/index.html" />	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	<!-- All in one Favicon 4.7 --><style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<style type="text/css" id="thrive-default-styles"></style>
+	</head>
+
+	<body class="post-template-default single single-post postid-526 single-format-standard custom-background wp-embed-responsive tribe-no-js singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-hidden">
+
+		<a class="skip-link screen-reader-text" href="../../../../index.html%3Fp=526.html#site-content">Skip to the content</a>
+		<header id="site-header" class="header-footer-group" role="banner">
+
+			<div class="header-inner section-inner">
+
+				<div class="header-titles-wrapper">
+
+					
+						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+							<span class="toggle-inner">
+								<span class="toggle-icon">
+									<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)" /></svg>								</span>
+								<span class="toggle-text">Search</span>
+							</span>
+						</button><!-- .search-toggle -->
+
+					
+					<div class="header-titles">
+
+						<div class="site-title faux-heading"><a href="../../../../index.html">Fixing Social Media</a></div><div class="site-description">MAS S.67 // Spring 2020</div><!-- .site-description -->
+					</div><!-- .header-titles -->
+
+					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+						<span class="toggle-inner">
+							<span class="toggle-icon">
+								<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewBox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)" /></svg>							</span>
+							<span class="toggle-text">Menu</span>
+						</span>
+					</button><!-- .nav-toggle -->
+
+				</div><!-- .header-titles-wrapper -->
+
+				<div class="header-navigation-wrapper">
+
+					
+							<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation">
+
+								<ul class="primary-menu reset-list-style">
+
+								<li class="page_item page-item-883"><a href="../../../../index.html%3Fp=883.html">Final Projects</a></li>
+<li class="page_item page-item-2"><a href="../../../../index.html">Syllabus</a></li>
+<li class="page_item page-item-6"><a href="../../../../blog/index.html">Blog</a></li>
+
+								</ul>
+
+							</nav><!-- .primary-menu-wrapper -->
+
+						
+						<div class="header-toggles hide-no-js">
+
+						
+							<div class="toggle-wrapper search-toggle-wrapper">
+
+								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+									<span class="toggle-inner">
+										<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)" /></svg>										<span class="toggle-text">Search</span>
+									</span>
+								</button><!-- .search-toggle -->
+
+							</div>
+
+							
+						</div><!-- .header-toggles -->
+						
+				</div><!-- .header-navigation-wrapper -->
+
+			</div><!-- .header-inner -->
+
+			<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal">
+
+	<div class="search-modal-inner modal-inner">
+
+		<div class="section-inner">
+
+			<form role="search" aria-label="Search for:" method="get" class="search-form" action="../../../../index.html">
+	<label for="search-form-1">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<input type="submit" class="search-submit" value="Search" />
+</form>
+
+			<button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+				<span class="screen-reader-text">Close search</span>
+				<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>			</button><!-- .search-toggle -->
+
+		</div><!-- .section-inner -->
+
+	</div><!-- .search-modal-inner -->
+
+</div><!-- .menu-modal -->
+
+		</header><!-- #site-header -->
+
+		
+<div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal">
+
+	<div class="menu-modal-inner modal-inner">
+
+		<div class="menu-wrapper section-inner">
+
+			<div class="menu-top">
+
+				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
+					<span class="toggle-text">Close Menu</span>
+					<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>				</button><!-- .nav-toggle -->
+
+				
+					<nav class="mobile-menu" aria-label="Mobile" role="navigation">
+
+						<ul class="modal-menu reset-list-style">
+
+						<li class="page_item page-item-883"><div class="ancestor-wrapper"><a href="../../../../index.html%3Fp=883.html">Final Projects</a></div><!-- .ancestor-wrapper --></li>
+<li class="page_item page-item-2"><div class="ancestor-wrapper"><a href="../../../../index.html">Syllabus</a></div><!-- .ancestor-wrapper --></li>
+<li class="page_item page-item-6"><div class="ancestor-wrapper"><a href="../../../../blog/index.html">Blog</a></div><!-- .ancestor-wrapper --></li>
+
+						</ul>
+
+					</nav>
+
+					
+			</div><!-- .menu-top -->
+
+			<div class="menu-bottom">
+
+				
+			</div><!-- .menu-bottom -->
+
+		</div><!-- .menu-wrapper -->
+
+	</div><!-- .menu-modal-inner -->
+
+</div><!-- .menu-modal -->
+
+<main id="site-content" role="main">
+
+	
+<article class="post-526 post type-post status-publish format-standard hentry category-uncategorized" id="post-526">
+
+	
+<header class="entry-header has-text-align-center header-footer-group">
+
+	<div class="entry-header-inner section-inner medium">
+
+		
+			<div class="entry-categories">
+				<span class="screen-reader-text">Categories</span>
+				<div class="entry-categories-inner">
+					<a href="../../../../category/uncategorized/index.html" rel="category tag">Uncategorized</a>				</div><!-- .entry-categories-inner -->
+			</div><!-- .entry-categories -->
+
+			<h1 class="entry-title">Assignment 3:  Case Study</h1>
+		<div class="post-meta-wrapper post-meta-single post-meta-single-top">
+
+			<ul class="post-meta">
+
+									<li class="post-author meta-wrapper">
+						<span class="meta-icon">
+							<span class="screen-reader-text">Post author</span>
+							<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z" /></svg>						</span>
+						<span class="meta-text">
+							By <a href="../../../../author/jackchen/index.html">jackchen</a>						</span>
+					</li>
+										<li class="post-date meta-wrapper">
+						<span class="meta-icon">
+							<span class="screen-reader-text">Post date</span>
+							<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z" /></svg>						</span>
+						<span class="meta-text">
+							<a href="../../../../index.html%3Fp=526.html">March 30, 2020</a>
+						</span>
+					</li>
+										<li class="post-comment-link meta-wrapper">
+						<span class="meta-icon">
+							<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z" /></svg>						</span>
+						<span class="meta-text">
+							<a href="../../../../index.html%3Fp=526.html#comments">1 Comment<span class="screen-reader-text"> on Assignment 3:  Case Study</span></a>						</span>
+					</li>
+					
+			</ul><!-- .post-meta -->
+
+		</div><!-- .post-meta-wrapper -->
+
+		
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+
+	<div class="post-inner thin ">
+
+		<div class="entry-content">
+
+			
+<figure class="wp-block-image size-large"><img src="../../../../wp-content/uploads/sites/35/2020/03/u1506452160427664830fm26gp0.jpg" alt="" class="wp-image-528" srcset="../../../../wp-content/uploads/sites/35/2020/03/u1506452160427664830fm26gp0.jpg 261w, ../../../../wp-content/uploads/sites/35/2020/03/u1506452160427664830fm26gp0-150x150.jpg 150w" sizes="(max-width: 261px) 100vw, 261px" /></figure>
+
+
+
+<p><strong>Introduction</strong>:</p>
+
+
+
+<p>“Xiachufang” is an
+entry in to Chinese home cuisine on the internet. It is a mobile application
+that provides the purchase of ingredients, kitchen supplies, and the query and
+most importantly, sharing of recipes. The online recipe sharing community was a
+relatively new concept when the idea was introduced. But as of August 2016,
+there are more than 600,000 original recipe contents, and 20 million gourmet
+works have been uploaded to this online platform.</p>
+
+
+
+<p>Among them, the
+iPhone version of “Xiachufang” was selected as the App Store application and
+was selected as a demonstration app by the Apple Store offline experience store
+and was selected as the App Store&#8217;s best 2013 gourmet app in China.</p>
+
+
+
+<p>After launching
+the marketplace business at the end of 2014, it has become a food e-commerce
+platform for suppliers and consumers who value quality; in the field of kitchen
+appliances, it has revealed its dominant position, and has established
+strategic cooperation with brands such as Panasonic covering sales and brand
+promotion. The selling of personalized quality foods and ingredients highlights
+the vision and tonality of the kitchen selection. Many long-tail products have
+become popular models through the push of the application. In addition to
+product brands, many channel brands and e-commerce platforms have also become
+suppliers of “Xiachufang”, such as Yiguo in the fresh produce sector, spring
+sowing, and Sam&#8217;s member stores in the imported food sector, highlighting the
+entry status of “Xiachufang”.</p>
+
+
+
+<p>The kitchen UGC
+gourmet content and KOL cultivated by a large number of platforms can provide
+value-added services for cooperative products, provide more help for consumers&#8217;
+purchase decisions, and the combination of media and e-commerce is an advantage
+that traditional e-commerce does not have. Because of the advantages of users,
+the kitchen can focus on the platform building and online user experience in an
+asset-light manner, while leaving the storage, logistics, and packaging to the
+supplier.</p>
+
+
+
+<figure class="wp-block-image size-large"><img src="../../../../wp-content/uploads/sites/35/2020/03/u30215178251070913707fm26gp0.jpg" alt="" class="wp-image-529" srcset="../../../../wp-content/uploads/sites/35/2020/03/u30215178251070913707fm26gp0.jpg 500w, ../../../../wp-content/uploads/sites/35/2020/03/u30215178251070913707fm26gp0-300x200.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></figure>
+
+
+
+<p><strong>The Community</strong>:</p>
+
+
+
+<p><em>Gender</em>:
+More than 70% are female users. From a cultural perspective, it is not
+surprising to me that there are still more women who are cooking in China. Even
+though the Chinese modern household do not hold the same values of the older
+generation, there are still societal expectations that have prejudices of women
+cooking in the household. So, the design of the app are targeted more towards
+the “feminine” taste. </p>
+
+
+
+<p><em>Age</em>:
+The main users of the Xiachufang app are people who were boring in the 80s and
+90s. 40% of users are in the age range of 31-35 years old, have a certain
+number of working years, most of them may be married, is the main people
+cooking at home. The second most users are 25-30 years old people. Soon after
+leaving college campuses, some rented houses, live alone, and they may cook
+their own meals or often call for takeaways (one of the most lucrative and
+popular ways of eating in China); some may live with their parents and may not
+cook their own meals. People who are 36-40 use the app noticeably less. This
+may be because this older population are more stable in their lives and have
+figured out their own set of cooking recipes, so they do not need to refer to
+recipes often.</p>
+
+
+
+<p><em>Industry/Occupation</em>: Weibo users who pay attention to the Xiachufang app are educated, and a large part of them are from overseas. It can be speculated that when people want to cook Chinese food, no one around them in a foreign setting can help. Looking at the data, there are higher education professions such as science and technology, media, design, culture, banking, and the ranks are also managers and directors that use the app. There are also some people who are freelancers (including housewives and husbands) and Taobao sellers (who have relatively flexible time in their daily schedule). Among the users who pay attention to the kitchen, housewives account for 61.94%, followed by blue-collar workers, workplace workers (the proportion of which is close), student party, and social elites. Therefore, users who can roughly launch Xiachufang are mainly highly educated, ordinary professionals, and housewives.</p>
+
+
+
+<p>Pros and Cons (demonstrated through
+scenarios)</p>
+
+
+
+<p>Pros</p>
+
+
+
+<p>1. <em>What if I want to cook my own food but do not know how?</em> For a lot of
+us, that usually means asking our parents. For example, there was a commercial
+for the China Merchants Bank called &#8220;Tomato Scrambled Egg&#8221;. The
+commercial is about Chinese students who are studying abroad that wanted to cook
+the dish. Regardless of time difference, they wake their parents in the middle
+of the night and get step-by-step instructions on the phone. But if the parents
+or other people who can guide them are not around, they are helpless. With
+Xiachufang, you do not have to wake up your parents at all, you can easily learn
+the step by step instructions based on the recipe, and you can even refer to
+pictures and videos in that online community or even chat with the writer of
+the recipe.</p>
+
+
+
+<p>2. <em>A person who is proficient in cooking arrives home at the end of a day
+exhausted, looks at what is in the refrigerator and wonders what to make with
+the produce in hand.</em> For these situations, the person will rely on experience
+and cook some dishes that have been repeatedly made, and the family might
+complain that they are tired of eating the repetitive dish. With this app,
+there is a wide choice of recipes posted by the large community that can give
+the user a wide variety of recipes. </p>
+
+
+
+<p>3. <em>Food lovers (influencers) who have successfully completed a cooking masterpiece
+and feel that they are particularly proud.</em> What do they usually do? It may
+be taking photos and sharing with friends/Weibo, harvesting a wave of likes,
+but people loose interest after a while, and users will be tired of taking
+photos. It is not the same when it is posted to Xiachufang. The community of
+the app are very enthusiastic about cooking. They will discuss with each other
+about whether it is better to change a seasoning or how creating a different
+atmosphere can change the taste of the food. They can even get the recognition
+from gourmet cooks and reviews.</p>
+
+
+
+<p>Cons</p>
+
+
+
+<p>1. <em>Unfriendly to novices</em>: Most recipes are uploaded by users
+spontaneously. Veterans often use words such as &#8220;appropriate&#8221; and
+&#8220;a little&#8221;, and it is difficult for novices to control the amount of
+seasonings, which often determines the success of the dish. Therefore,
+generally those who can successfully cook under the instructions of the
+community are those who have a little knowledge or talent in cooking.</p>
+
+
+
+<p><em>Suggestion</em>:
+The most important thing for a novice is the need for someone to give hands-on
+guidance, just like a parent giving a pointer or two around them. So, the app
+could open a live broadcast teaching function. In addition, some ingredients
+and seasonings may not be readily available, and some people will point out
+whether there are suitable substitutes that will not affect the taste of the
+final work.</p>
+
+
+
+<p>2. <em>There is no recipe category</em>: I just mentioned that anyone can share
+recipes. Although you can search for recipes by searching, it is a very
+cluttered community. It is more convenient to know the ingredients or dish
+names, but it is not convenient to find a certain cuisine. Or a specific type
+of recipe.</p>
+
+
+
+<p>Suggestion: They could make a
+partition according to the recipe classification on the discovery page, such as
+by region, season, etc., and then display the user uploaded works. Sorting into
+the corresponding locations can have more detailed options to help users get
+more inspiration.</p>
+
+
+
+<p><strong>Conclusion (Goal of the App):</strong></p>
+
+
+
+<p>1. Give young people who are new to
+society, do not have much cooking experience, and don’t want to torment themselves
+by making good food a new way to socialize. One can find simple and
+easy-to-start recipes in Xiachufang to get started quickly;</p>
+
+
+
+<p>2. Help house wives/husbands
+maintain the health of their families, as well as find new interest with the
+online cooking community. Comprehensive recipes in the app can let them show
+their skills and make a variety of delicious food.</p>
+
+
+
+<p>3. Gourmet enthusiasts love to
+share their experiences, but before there was no special platform to specialize
+in making their own food. You can find like-minded people in the Xiachufang to
+share, communicate and grow together.</p>
+
+
+
+<p><strong>Sources</strong></p>
+
+
+
+<p><a href="http://www.iresearchchina.com/products/mut.html">http://www.iresearchchina.com/products/mut.html</a></p>
+
+
+
+<p><a href="http://www.bluemc.cn/">http://www.bluemc.cn/</a></p>
+
+		</div><!-- .entry-content -->
+
+	</div><!-- .post-inner -->
+
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+	<nav class="pagination-single section-inner" aria-label="Post" role="navigation">
+
+		<hr class="styled-separator is-style-wide" aria-hidden="true" />
+
+		<div class="pagination-single-inner">
+
+			
+				<a class="previous-post" href="../../../../index.html%3Fp=523.html">
+					<span class="arrow" aria-hidden="true">&larr;</span>
+					<span class="title"><span class="title-inner">How Data Visualization is Discussed Online in a Healthy Community</span></span>
+				</a>
+
+				
+				<a class="next-post" href="../../../../index.html%3Fp=578.html">
+					<span class="arrow" aria-hidden="true">&rarr;</span>
+						<span class="title"><span class="title-inner">A New Bot on the Block: The Rise of Virtual Influencers and What It Means for Our Online Communities</span></span>
+				</a>
+				
+		</div><!-- .pagination-single-inner -->
+
+		<hr class="styled-separator is-style-wide" aria-hidden="true" />
+
+	</nav><!-- .pagination-single -->
+
+	
+		<div class="comments-wrapper section-inner">
+
+			
+	<div class="comments" id="comments">
+
+		
+		<div class="comments-header section-inner small max-percentage">
+
+			<h2 class="comment-reply-title">
+			1 reply on &ldquo;Assignment 3:  Case Study&rdquo;			</h2><!-- .comments-title -->
+
+		</div><!-- .comments-header -->
+
+		<div class="comments-inner section-inner thin max-percentage">
+
+						<div id="comment-25" class="comment even thread-even depth-1">
+				<article id="div-comment-25" class="comment-body">
+					<footer class="comment-meta">
+						<div class="comment-author vcard">
+							<a href="http://ethanzuckerman.com" rel="external nofollow" class="url"><img alt='' src='https://secure.gravatar.com/avatar/789b75d6f74080c1c6a7f7f2f7698a63?s=120&#038;d=mm&#038;r=g' class='avatar avatar-120 photo' height='120' width='120' /><span class="fn">EthanZ</span><span class="screen-reader-text says">says:</span></a>						</div><!-- .comment-author -->
+
+						<div class="comment-metadata">
+							<a href="../../../../index.html%3Fp=526.html#comment-25">
+																<time datetime="2020-04-11T20:06:48+00:00" title="April 11, 2020 at 8:06 pm">
+									April 11, 2020 at 8:06 pm								</time>
+							</a>
+													</div><!-- .comment-metadata -->
+
+					</footer><!-- .comment-meta -->
+
+					<div class="comment-content entry-content">
+
+						<p>Thanks for helping us understand Xiachufang, which doesn&#8217;t appear to have a clear parallel in the US. The integration with grocery delivery and cooking equipment suppliers is particularly unusual to US audiences&#8230; and a good example of how many Chinese platforms are vertically integrated. I like your approach of offering suggestions for how Xiachufang could improve, but it would be helpful to hear more about what you think they are already doing well. It sounds like you&#8217;re impressed with the ways Xiachufang is reaching out to inexperienced cooks &#8211; do you think it is connecting them to each other, or do they feel more connected to the app than to the broader community? It would be helpful to explore that in considering this as a community case study.</p>
+
+					</div><!-- .comment-content -->
+
+					
+				</article><!-- .comment-body -->
+
+			</div><!-- #comment-## -->
+
+		</div><!-- .comments-inner -->
+
+	</div><!-- comments -->
+
+	<hr class="styled-separator is-style-wide" aria-hidden="true" />
+		</div><!-- .comments-wrapper -->
+
+		
+</article><!-- .post -->
+
+</main><!-- #site-content -->
+
+
+			<footer id="site-footer" role="contentinfo" class="header-footer-group">
+
+				<div class="section-inner">
+
+					<div class="footer-credits">
+
+						<p class="footer-copyright">&copy;
+							2020							<a href="../../../../index.html">Fixing Social Media</a>
+						</p><!-- .footer-copyright -->
+
+						<p class="powered-by-wordpress">
+							<a href="https://wordpress.org/">
+								Powered by WordPress							</a>
+						</p><!-- .powered-by-wordpress -->
+
+					</div><!-- .footer-credits -->
+
+					<a class="to-the-top" href="../../../../index.html%3Fp=526.html#site-header">
+						<span class="to-the-top-long">
+							To the top <span class="arrow" aria-hidden="true">&uarr;</span>						</span><!-- .to-the-top-long -->
+						<span class="to-the-top-short">
+							Up <span class="arrow" aria-hidden="true">&uarr;</span>						</span><!-- .to-the-top-short -->
+					</a><!-- .to-the-top -->
+
+				</div><!-- .section-inner -->
+
+			</footer><!-- #site-footer -->
+
+		<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+var colomatpauseInit = '';
+var colomattouchstart = '';
+</script>		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script src='../../../../wp-includes/js/imagesloaded.min.js%3Fver=3.2.0'></script>
+<script src='../../../../wp-includes/js/masonry.min.js%3Fver=3.3.2'></script>
+<script src='../../../../wp-content/plugins/jquery-collapse-o-matic/js/collapse.js%3Fver=1.6.19'></script>
+<script>
+var tve_dash_front = {"ajaxurl":"https:\/\/fixingsocialmedia.mit.edu\/wp-admin\/admin-ajax.php","force_ajax_send":"","is_crawler":"1"};
+</script>
+<script src='../../../../wp-content/plugins/thrive-visual-editor/thrive-dashboard/js/dist/frontend.min.js%3Fver=2.2.16.1'></script>
+<script src='../../../../wp-includes/js/wp-embed.min.js%3Fver=5.4.1'></script>
+<script type="text/javascript">var tcb_post_lists=JSON.parse('[]');</script>	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	
+	</body>
+</html>
